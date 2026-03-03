@@ -11,7 +11,7 @@ A PowerShell script that displays Windows Toast notifications for Claude Code ho
 1. Download the script:
 
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code-notify-powershell/main/claude-hook-toast.ps1" -OutFile "$env:USERPROFILE\.claude\claude-hook-toast.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yeseong-p/claude-code-notify-powershell/main/claude-hook-toast.ps1" -OutFile "$env:USERPROFILE\.claude\claude-hook-toast.ps1"
 ```
 
 2. Add to `~/.claude/settings.json`:
@@ -24,7 +24,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code
         "hooks": [
           {
             "type": "command",
-            "command": "cmd /c chcp 65001 >nul && powershell -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\claude-hook-toast.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
           }
         ]
       }
@@ -34,7 +34,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code
         "hooks": [
           {
             "type": "command",
-            "command": "cmd /c chcp 65001 >nul && powershell -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\claude-hook-toast.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
           }
         ]
       }
@@ -54,7 +54,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code
         "hooks": [
           {
             "type": "command",
-            "command": "cmd /c chcp 65001 >nul && powershell -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\claude-hook-toast.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
           }
         ]
       }
@@ -64,7 +64,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code
         "hooks": [
           {
             "type": "command",
-            "command": "cmd /c chcp 65001 >nul && powershell -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\claude-hook-toast.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
           }
         ]
       }
@@ -74,7 +74,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code
         "hooks": [
           {
             "type": "command",
-            "command": "cmd /c chcp 65001 >nul && powershell -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\claude-hook-toast.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
           }
         ]
       }
@@ -84,7 +84,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code
         "hooks": [
           {
             "type": "command",
-            "command": "cmd /c chcp 65001 >nul && powershell -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\claude-hook-toast.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
           }
         ]
       }
@@ -94,7 +94,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/soulee-dev/claude-code
         "hooks": [
           {
             "type": "command",
-            "command": "cmd /c chcp 65001 >nul && powershell -ExecutionPolicy Bypass -File %USERPROFILE%\\.claude\\claude-hook-toast.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
           }
         ]
       }
