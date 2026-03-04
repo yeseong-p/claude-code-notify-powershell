@@ -48,17 +48,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yeseong-p/claude-code-
           }
         ]
       }
-    ]
-  }
-}
-```
-
-<details>
-<summary>More notifications (SessionStart, SessionEnd)</summary>
-
-```json
-{
-  "hooks": {
+    ],
     "SessionStart": [
       {
         "hooks": [
@@ -82,8 +72,6 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yeseong-p/claude-code-
   }
 }
 ```
-
-</details>
 
 For more hook events, see the [Claude Code Hooks Guide](https://code.claude.com/docs/en/hooks-guide#hook-events-overview).
 
