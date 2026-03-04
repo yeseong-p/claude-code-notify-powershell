@@ -38,37 +38,27 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yeseong-p/claude-code-
           }
         ]
       }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
+          }
+        ]
+      }
     ]
   }
 }
 ```
 
 <details>
-<summary>More notifications (SessionStart, SessionEnd, PermissionRequest)</summary>
+<summary>More notifications (SessionStart, SessionEnd)</summary>
 
 ```json
 {
   "hooks": {
-    "Notification": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
-          }
-        ]
-      }
-    ],
     "SessionStart": [
       {
         "hooks": [
@@ -80,16 +70,6 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yeseong-p/claude-code-
       }
     ],
     "SessionEnd": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -ExecutionPolicy Bypass -File \"$USERPROFILE/.claude/claude-hook-toast.ps1\""
-          }
-        ]
-      }
-    ],
-    "PermissionRequest": [
       {
         "hooks": [
           {
